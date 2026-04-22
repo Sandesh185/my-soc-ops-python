@@ -1,25 +1,45 @@
 <div id="game-container">
-<div class="flex flex-col items-center justify-center min-h-full p-6 bg-gray-50">
-    <div class="text-center max-w-sm">
-        <h1 class="text-4xl font-bold text-gray-900 mb-2">Soc Ops</h1>
-        <p class="text-lg text-gray-600 mb-8">Social Bingo</p>
-
-        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200 mb-8">
-            <h2 class="font-semibold text-gray-800 mb-3">How to play</h2>
-            <ul class="text-left text-gray-600 text-sm space-y-2">
-                <li>• Find people who match the questions</li>
-                <li>• Tap a square when you find a match</li>
-                <li>• Get 5 in a row to win!</li>
-            </ul>
+<div class="landing-wrapper">
+    <div class="landing-container">
+        <!-- Hero Section -->
+        <div class="landing-hero">
+            <h1 class="landing-title">SOC OPS</h1>
+            <div class="landing-subtitle">Social Bingo Adventure</div>
+            <div class="landing-tagline">Connect. Find. Win.</div>
         </div>
 
+        <!-- Feature Cards -->
+        <div class="landing-cards">
+            <div class="landing-card" style="animation-delay: 0.1s;">
+                <div class="landing-card-icon">👥</div>
+                <div class="landing-card-title">Meet People</div>
+                <div class="landing-card-text">Find others who match fun questions and prompts</div>
+            </div>
+            <div class="landing-card" style="animation-delay: 0.2s;">
+                <div class="landing-card-icon">🎯</div>
+                <div class="landing-card-title">Mark Squares</div>
+                <div class="landing-card-text">Tap the board to mark your matches</div>
+            </div>
+            <div class="landing-card" style="animation-delay: 0.3s;">
+                <div class="landing-card-icon">🏆</div>
+                <div class="landing-card-title">Get Five</div>
+                <div class="landing-card-text">Achieve 5 in a row horizontally, vertically, or diagonally</div>
+            </div>
+        </div>
+
+        <!-- CTA Button -->
         <button
             hx-post="/start"
             hx-target="#game-container"
             hx-swap="outerHTML"
-            class="w-full bg-accent text-white font-semibold py-4 px-8 rounded-lg text-lg active:bg-accent-light transition-colors">
-            Start Game
+            class="landing-button"
+            style="animation-delay: 0.4s;">
+            🎮 Start Your Adventure
         </button>
+
+        <div class="landing-footer" style="animation-delay: 0.5s;">
+            Made for meaningful connections ✨
+        </div>
     </div>
 </div>
 </div>
